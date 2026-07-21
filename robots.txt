@@ -1,0 +1,39 @@
+# Odessa Lab Technologies — robots.txt
+# Allow all standard search engines to crawl the full site
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Google & Bing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI answer/search engines — allowed so odessalab.tech can be cited
+# in ChatGPT Search, Perplexity, Gemini/AI Overviews, and Claude answers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Bulk AI-training crawlers that scrape content without sending
+# referral traffic or citations back — blocked
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://odessalab.tech/sitemap.xml
